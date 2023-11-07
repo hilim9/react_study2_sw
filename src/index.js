@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>, // StrictMode 두번호출, 레거시 코드를 허용하지 않음
 );
 
 // If you want to start measuring performance in your app, pass a function
