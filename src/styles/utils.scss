@@ -1,0 +1,15 @@
+// 공통 scss
+
+$red: #fa5252;
+$orange: #fd7e14;
+$yellow: #fcc419;
+$green: #40c057;
+$indigo: #5c7cfa;
+$blue: rgb(39, 39, 117);
+$violet: #7950f2;
+
+@mixin square($size) {
+    $calculated: 32px * $size; // 기본값 32px
+    width: $calculated;
+    height: $calculated;
+}

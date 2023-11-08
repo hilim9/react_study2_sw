@@ -1,7 +1,11 @@
-import LoginContainer from './containers/member/LoginContainer';
+//import LoginContainer from './containers/member/LoginContainer';
+//import Posts from './components/post';
+//import Counter from './components/Counter';
+//import Average from './components/Average';
+import SassComponent from './components/SassComponent';
 
 const App = () => {
-  return <LoginContainer />;
+  return <SassComponent />;
 };
 
 export default App;
