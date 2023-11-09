@@ -1,15 +1,22 @@
+import { useState } from 'react';
 import styles from '../styles/header.module.scss';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
 
-console.log(styles);
+const cn = classNames.bind(styles);
+
+//console.log(styles);
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
   return (
-    <div className={styles.header}>
-      <button type="button" className={classNames('red', 'cls1', 'cls2')}>
+    <div className={cn('header')}>
+      <button type="button" className={cn('red', { isActive })}>
         로그인
       </button>
       <button type="button">회원가입</button>
+      <button type="button" onClick={() => setIsActive(!isActive)}>
+        Toggle
+      </button>
     </div>
   );
 };

@@ -1,12 +1,12 @@
-//import LoginContainer from './containers/member/LoginContainer';
+import LoginContainer from './containers/member/LoginContainer';
 //import Posts from './components/post';
 //import Counter from './components/Counter';
 //import Average from './components/Average';
 //import SassComponent from './components/SassComponent';
-import Header from './components/Header';
+//import Header from './components/Header';
 
 const App = () => {
-  return <Header />;
+  return <LoginContainer />;
 };
 
 export default App;
