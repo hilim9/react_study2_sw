@@ -15,9 +15,13 @@ const Average = () => {
 
   // [] 빈 값 -> 처음 마운트 될 때 1번만 생성
   const handleChange = useCallback((e) => setNumber(e.currentTarget.value), []);
+  //const handleClick = useCallback(
+  // () => setList(list.concat(Number(number))),
+  // [list, number],
+  //);
   const handleClick = useCallback(
-    () => setList(list.concat(Number(number))),
-    [list, number],
+    () => setList((list) => list.concat(Number(number))),
+    [number],
   );
   const avg = useMemo(() => getAverage(list), [list]);
 

@@ -1,4 +1,4 @@
-@import './utils'; // 같은 종류의 파일을 import 할 때는 확장자 생략 가능
+@import '../styles/utils'; // 같은 종류의 파일을 import 할 때는 확장자 생략 가능
 
 .SassComponent {
     display: flex;
