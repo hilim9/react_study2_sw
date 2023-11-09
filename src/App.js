@@ -2,10 +2,11 @@
 //import Posts from './components/post';
 //import Counter from './components/Counter';
 //import Average from './components/Average';
-import SassComponent from './components/SassComponent';
+//import SassComponent from './components/SassComponent';
+import Header from './components/Header';
 
 const App = () => {
-  return <SassComponent />;
+  return <Header />;
 };
 
 export default App;
