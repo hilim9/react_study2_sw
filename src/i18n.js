@@ -17,5 +17,3 @@ i18n.use(initReactI18next).init({
   resources,
   lng: 'ko',
 });
-
-export default i18n;

@@ -12,13 +12,3 @@ export const MainTitle = styled.div`
       color: ${color};
     `}
 `;
-
-/*
-const num1 = 10;
-const num2 = 20;
-
-export { num1 }; // 여러개 내보내기
-export { num2 };
-
-export default MainTitle; // 한개만 내보내기
-*/

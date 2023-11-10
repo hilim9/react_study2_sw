@@ -1,11 +1,11 @@
-@import '../styles/utils'; // 같은 종류의 파일을 import 할 때는 확장자 생략 가능
+@import '../styles/utils';
 
 .SassComponent {
     display: flex;
     .box {
         width: 32px;
         height: 32px;
-        &.red { // .SassComponent .box.red
+        &.red {
             background: $red;
             @include square(1);
         }
@@ -25,13 +25,13 @@
             @include square(4);
         }
 
-        &.indigo {
-            background: $indigo;
+        &.blue {
+            background: $blue;
             @include square(5);
         }
 
-        &.blue {
-            background: $blue;
+        &.indigo {
+            background: $indigo;
             @include square(6);
         }
 
@@ -44,14 +44,5 @@
             background: black;
         }
     }
+    
 }
-
-/*
-$commonFont: Verdana;
-$commonColor: rgba(255, 60, 0, 0.87);
-
-body {
-    font-family: $commonFont;
-    background: $commonColor;
-}
-*/

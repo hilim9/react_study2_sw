@@ -13,24 +13,22 @@ const LoginContainer = () => {
   const [error, setError] = useState({
     email: '',
     password: '',
-    global: '', // 공통적인 에러
+    global: '',
   });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    //console.log(form);
 
-    // 유효성 검사 S
+    /* 유효성 검사 S */
     for (const field in form) {
       const value = form[field].trim();
       if (!value) {
-        //setError({ ...error, [field]: '필수입력항목' });
         error[field] = t(`required.${field}`);
       }
     }
 
     setError({ ...error });
-    // 유효성 검사 E
+    /* 유효성 검사 E */
   };
 
   const onChange = (e) => {

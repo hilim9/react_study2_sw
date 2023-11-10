@@ -1,6 +1,5 @@
 import { useReducer } from 'react';
-
-const INCREASE = 'counter/increase'; // 컴포넌트 명 / 액션명을 넣으면 중복방지됨
+const INCREASE = 'counter/increase';
 const DECREASE = 'counter/decrease';
 
 const increase = () => ({ type: INCREASE });
@@ -20,7 +19,7 @@ function reducer(state, action) {
 }
 
 const Counter = () => {
-  // state: 현재 상태 값, dispatch : 액션을 발생 시키는 함수
+  // state : 현재 상태 값, dispatch : 액션을 발생시키는 함수
   const [state, dispatch] = useReducer(reducer, { number: 0 });
   return (
     <>

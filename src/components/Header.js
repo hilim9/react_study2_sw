@@ -4,10 +4,9 @@ import classNames from 'classnames/bind';
 
 const cn = classNames.bind(styles);
 
-//console.log(styles);
-
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <div className={cn('header')}>
       <button type="button" className={cn('red', { isActive })}>
